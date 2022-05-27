@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target basic_simple_talker[0m
+[35m[1mScanning dependencies of target basic_simple_listener[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/basic_simple_listener.dir/src/basic_simple_listener.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/basic_simple_talker.dir/src/basic_simple_talker.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable /home/ubuntu/raspi_ros/devel/.private/basic_lecture/lib/basic_lecture/basic_simple_talker[0m
+[ 75%] Built target basic_simple_talker
+[100%] [32m[1mLinking CXX executable /home/ubuntu/raspi_ros/devel/.private/basic_lecture/lib/basic_lecture/basic_simple_listener[0m
+[100%] Built target basic_simple_listener

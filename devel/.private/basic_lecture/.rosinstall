@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ubuntu/raspi_ros/devel/.private/basic_lecture/setup.sh

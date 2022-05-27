@@ -1,0 +1,12 @@
+Symlinking /home/ubuntu/raspi_ros/devel/./setup.zsh
+Symlinking /home/ubuntu/raspi_ros/devel/./setup.bash
+Symlinking /home/ubuntu/raspi_ros/devel/./setup.sh
+Symlinking /home/ubuntu/raspi_ros/devel/./local_setup.sh
+Symlinking /home/ubuntu/raspi_ros/devel/./env.sh
+Symlinking /home/ubuntu/raspi_ros/devel/./cmake.lock
+Symlinking /home/ubuntu/raspi_ros/devel/./local_setup.zsh
+Symlinking /home/ubuntu/raspi_ros/devel/./local_setup.bash
+Symlinking /home/ubuntu/raspi_ros/devel/./_setup_util.py
+Symlinking /home/ubuntu/raspi_ros/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Symlinking /home/ubuntu/raspi_ros/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/ubuntu/raspi_ros/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake

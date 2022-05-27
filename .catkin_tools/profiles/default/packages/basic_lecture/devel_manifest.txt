@@ -1,0 +1,8 @@
+basic_lecture
+/home/ubuntu/raspi_ros/devel/.private/basic_lecture/cmake.lock /home/ubuntu/raspi_ros/devel/./cmake.lock
+/home/ubuntu/raspi_ros/devel/.private/basic_lecture/lib/pkgconfig/basic_lecture.pc /home/ubuntu/raspi_ros/devel/lib/pkgconfig/basic_lecture.pc
+/home/ubuntu/raspi_ros/devel/.private/basic_lecture/lib/basic_lecture/basic_simple_listener /home/ubuntu/raspi_ros/devel/lib/basic_lecture/basic_simple_listener
+/home/ubuntu/raspi_ros/devel/.private/basic_lecture/lib/basic_lecture/basic_twist_publisher /home/ubuntu/raspi_ros/devel/lib/basic_lecture/basic_twist_publisher
+/home/ubuntu/raspi_ros/devel/.private/basic_lecture/lib/basic_lecture/basic_simple_talker /home/ubuntu/raspi_ros/devel/lib/basic_lecture/basic_simple_talker
+/home/ubuntu/raspi_ros/devel/.private/basic_lecture/share/basic_lecture/cmake/basic_lectureConfig.cmake /home/ubuntu/raspi_ros/devel/share/basic_lecture/cmake/basic_lectureConfig.cmake
+/home/ubuntu/raspi_ros/devel/.private/basic_lecture/share/basic_lecture/cmake/basic_lectureConfig-version.cmake /home/ubuntu/raspi_ros/devel/share/basic_lecture/cmake/basic_lectureConfig-version.cmake

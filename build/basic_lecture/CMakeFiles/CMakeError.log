@@ -1,0 +1,56 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ubuntu/raspi_ros/build/basic_lecture/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eeb09/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eeb09.dir/build.make CMakeFiles/cmTC_eeb09.dir/build
+make[1]: ディレクトリ '/home/ubuntu/raspi_ros/build/basic_lecture/CMakeFiles/CMakeTmp' に入ります
+Building C object CMakeFiles/cmTC_eeb09.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_eeb09.dir/CheckSymbolExists.c.o   -c /home/ubuntu/raspi_ros/build/basic_lecture/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_eeb09
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eeb09.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_eeb09.dir/CheckSymbolExists.c.o  -o cmTC_eeb09 
+CMakeFiles/cmTC_eeb09.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x14): `pthread_create' に対する定義されていない参照です
+CheckSymbolExists.c:(.text+0x18): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_eeb09.dir/build.make:97: recipe for target 'cmTC_eeb09' failed
+make[1]: *** [cmTC_eeb09] Error 1
+make[1]: ディレクトリ '/home/ubuntu/raspi_ros/build/basic_lecture/CMakeFiles/CMakeTmp' から出ます
+Makefile:126: recipe for target 'cmTC_eeb09/fast' failed
+make: *** [cmTC_eeb09/fast] Error 2
+
+File /home/ubuntu/raspi_ros/build/basic_lecture/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ubuntu/raspi_ros/build/basic_lecture/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_480fb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_480fb.dir/build.make CMakeFiles/cmTC_480fb.dir/build
+make[1]: ディレクトリ '/home/ubuntu/raspi_ros/build/basic_lecture/CMakeFiles/CMakeTmp' に入ります
+Building C object CMakeFiles/cmTC_480fb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_480fb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_480fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_480fb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_480fb.dir/CheckFunctionExists.c.o  -o cmTC_480fb -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_480fb.dir/build.make:97: recipe for target 'cmTC_480fb' failed
+make[1]: *** [cmTC_480fb] Error 1
+make[1]: ディレクトリ '/home/ubuntu/raspi_ros/build/basic_lecture/CMakeFiles/CMakeTmp' から出ます
+Makefile:126: recipe for target 'cmTC_480fb/fast' failed
+make: *** [cmTC_480fb/fast] Error 2
+
+

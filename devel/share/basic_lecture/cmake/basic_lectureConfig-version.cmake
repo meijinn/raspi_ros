@@ -1,0 +1,1 @@
+/home/ubuntu/raspi_ros/devel/.private/basic_lecture/share/basic_lecture/cmake/basic_lectureConfig-version.cmake

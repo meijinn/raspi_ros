@@ -1,0 +1,5 @@
+Symlinking /home/ubuntu/raspi_ros/devel/lib/pkgconfig/basic_lecture.pc
+Symlinking /home/ubuntu/raspi_ros/devel/lib/basic_lecture/basic_simple_listener
+Symlinking /home/ubuntu/raspi_ros/devel/lib/basic_lecture/basic_simple_talker
+Symlinking /home/ubuntu/raspi_ros/devel/share/basic_lecture/cmake/basic_lectureConfig.cmake
+Symlinking /home/ubuntu/raspi_ros/devel/share/basic_lecture/cmake/basic_lectureConfig-version.cmake
