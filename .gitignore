@@ -1,0 +1,8 @@
+build/
+devel/
+logs/
+.catkin_tools/
+*.code-workspace
+.vscode/
+.catkin_tools/profiles/default/devel_collisions.txt
+devel/.catkin
