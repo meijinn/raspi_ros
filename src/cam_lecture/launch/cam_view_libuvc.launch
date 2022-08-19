@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="uvc_camera" type="uvc_camera_node" name="mycam">
+        <param name="width" value="1280" />
+        <param name="height" value="720" />
+        <param name="frame_rate" value="30" />
+        <prame name="video_mode" value="mjpeg" />
+    </node>
+</launch>
