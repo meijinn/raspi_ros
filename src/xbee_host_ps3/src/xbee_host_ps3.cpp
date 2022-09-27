@@ -8,6 +8,12 @@ void cont_Callback(const std_msgs::UInt8MultiArray& cmd_msg)
 {
     servo.data[0] = cmd_msg.data[0];
     servo.data[1] = cmd_msg.data[1];
+
+    if(servo.data[0] == 0 && servo.data[1] == 0){
+        servo.data[0] == 90;
+        servo.data[1] == 92;
+    }
+
     ROS_INFO("steering:%d",servo.data[0]);
     ROS_INFO("throttle:%d",servo.data[1]);
 }
