@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(xbee_host)
+project(raspi_node)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -10,7 +10,6 @@ project(xbee_host)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
-  serial
   std_msgs
   tf
 )
@@ -106,7 +105,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES xbee_host
+#  LIBRARIES raspi_node
 #  CATKIN_DEPENDS roscpp rospy std_msgs tf
 #  DEPENDS system_lib
 )
@@ -122,15 +121,15 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(xbee_host src/xbee_host.cpp)
+add_executable(raspi_node src/ubuntu_to_arduino.cpp)
 
-target_link_libraries(xbee_host
+target_link_libraries(raspi_node
   ${catkin_LIBRARIES}
 )
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/xbee_host.cpp
+#   src/${PROJECT_NAME}/raspi_node.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -141,7 +140,7 @@ target_link_libraries(xbee_host
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/xbee_host_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/raspi_node_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -205,7 +204,7 @@ target_link_libraries(xbee_host
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_xbee_host.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_raspi_node.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

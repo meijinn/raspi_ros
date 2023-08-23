@@ -1,0 +1,4 @@
+<launch>
+	<node name = "pub" pkg="gpio_test" type="pub.py" />
+	<node name = "sub" pkg="gpio_test" type="sub.py" output="screen"/>
+</launch>

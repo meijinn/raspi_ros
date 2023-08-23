@@ -1,6 +1,6 @@
 Linked: (/home/ubuntu/raspi_ros/devel/.private/basic_lecture/lib/pkgconfig/basic_lecture.pc, /home/ubuntu/raspi_ros/devel/lib/pkgconfig/basic_lecture.pc)
 Linked: (/home/ubuntu/raspi_ros/devel/.private/basic_lecture/lib/basic_lecture/basic_simple_listener, /home/ubuntu/raspi_ros/devel/lib/basic_lecture/basic_simple_listener)
-Symlinking /home/ubuntu/raspi_ros/devel/lib/basic_lecture/basic_twist_publisher
+Linked: (/home/ubuntu/raspi_ros/devel/.private/basic_lecture/lib/basic_lecture/basic_twist_publisher, /home/ubuntu/raspi_ros/devel/lib/basic_lecture/basic_twist_publisher)
 Linked: (/home/ubuntu/raspi_ros/devel/.private/basic_lecture/lib/basic_lecture/basic_simple_talker, /home/ubuntu/raspi_ros/devel/lib/basic_lecture/basic_simple_talker)
 Linked: (/home/ubuntu/raspi_ros/devel/.private/basic_lecture/share/basic_lecture/cmake/basic_lectureConfig.cmake, /home/ubuntu/raspi_ros/devel/share/basic_lecture/cmake/basic_lectureConfig.cmake)
 Linked: (/home/ubuntu/raspi_ros/devel/.private/basic_lecture/share/basic_lecture/cmake/basic_lectureConfig-version.cmake, /home/ubuntu/raspi_ros/devel/share/basic_lecture/cmake/basic_lectureConfig-version.cmake)

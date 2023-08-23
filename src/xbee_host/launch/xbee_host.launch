@@ -1,3 +1,0 @@
-<launch>
-  <node name="xbee_host" pkg="xbee_host" type="xbee_host" output="screen" />
-</launch>

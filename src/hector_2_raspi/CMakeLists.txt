@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(xbee_ps3)
+project(hector_2_raspi)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -7,12 +7,7 @@ project(xbee_ps3)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  rospy
-  std_msgs
-  tf
-)
+find_package(catkin REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -71,7 +66,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-#   std_msgs
+#   std_msgs  # Or other packages containing msgs
 # )
 
 ################################################
@@ -105,8 +100,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES xbee_ps3
-#  CATKIN_DEPENDS roscpp rospy std_msgs tf
+#  LIBRARIES hector_2_raspi
+#  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )
 
@@ -118,18 +113,12 @@ catkin_package(
 ## Your package locations should be listed before other locations
 include_directories(
 # include
-  ${catkin_INCLUDE_DIRS}
-)
-
-add_executable(xbee_ps3 src/xbee_ps3.cpp)
-
-target_link_libraries(xbee_ps3
-  ${catkin_LIBRARIES}
+# ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/xbee_ps3.cpp
+#   src/${PROJECT_NAME}/hector_2_raspi.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -140,7 +129,7 @@ target_link_libraries(xbee_ps3
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/xbee_ps3_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/hector_2_raspi_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -204,7 +193,7 @@ target_link_libraries(xbee_ps3
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_xbee_ps3.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_hector_2_raspi.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
