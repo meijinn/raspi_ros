@@ -127,6 +127,12 @@ target_link_libraries(raspi_node
   ${catkin_LIBRARIES}
 )
 
+add_executable(ps3_twist_sub src/ps3_twist_sub.cpp)
+
+target_link_libraries(ps3_twist_sub
+  ${catkin_LIBRARIES}	
+)
+
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/raspi_node.cpp

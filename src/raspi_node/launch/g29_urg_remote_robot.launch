@@ -1,0 +1,26 @@
+<launch>
+	<node pkg="urg_node" name="urg_node" type="urg_node" output="screen" >
+		<param name="serial_port" value="/dev/ttyACM0"/>
+		<param name="serial_baud" value="115200"/>
+		<param name="frame_id" value="base_link"/>
+		<param name="calibrate_time" value="true"/>
+		<param name="publish_intensity" value="false"/>
+		<param name="publish_multiecho" value="false"/>
+		<param name="angle_min" value="-1.5707963"/>
+		<param name="angle_max" value="1.5707963"/>
+	</node>
+	<node pkg="rosserial_python" type="serial_node.py" name="serial_node" output="screen" >
+    	<param name="port" value="/dev/ttyUSB0" />
+    	<param name="baud" value="115200" />
+  	</node>
+	
+	<!--<node pkg="libuvc_camera" type="camera_node" name="mycam">
+ 	<param name="width" value="1280" />
+ 	<param name="height" value="720" />
+ 	<param name="frame_rate" value="30" />
+ 	<param name="video_mode" value="mjpeg" />
+ 	</node>-->
+
+	<!--<node pkg="raspi_node" name="cont_to_cmd_node" type="ps3_twist_sub"/>-->
+	<node pkg="raspi_node" name="task_change" type="task_change.py"/>
+</launch>
