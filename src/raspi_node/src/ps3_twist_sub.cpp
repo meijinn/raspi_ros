@@ -2,6 +2,7 @@
 #include <geometry_msgs/Twist.h>
 #include <unistd.h>
 #include <string.h>
+#include <stdlib.h>
 
 geometry_msgs::Twist cmd_vel;
 
@@ -10,6 +11,7 @@ void cont_callback(const geometry_msgs::Twist& cont_msg){
 	cmd_vel.angular.z = cont_msg.angular.z;
 	if(cont_msg.linear.y == 1){
 		ros::shutdown();
+		exit(0);
 	}
 }
 

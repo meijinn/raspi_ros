@@ -10,8 +10,8 @@
 		<param name="angle_max" value="1.5707963"/>
 	</node>
 	<node pkg="rosserial_python" type="serial_node.py" name="serial_node" output="screen" >
-    	<param name="port" value="/dev/ttyUSB0" />
-    	<param name="baud" value="115200" />
+    		<param name="port" value="/dev/ttyACM1"/>
+    		<param name="baud" value="115200"/>
   	</node>
 
 	<!--<node pkg="libuvc_camera" type="camera_node" name="mycam">

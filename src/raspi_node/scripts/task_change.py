@@ -9,7 +9,7 @@ def callback(cont_msg):
     #if cont_msg.linear.y == 1:
     #    kill_node('cont_to_cmd_node')
     if cont_msg.linear.z == 1:
-        call(['rosrun','raspi_node','ps3_twist_sub'])
+        call(['rosrun','raspi_node','ps3_twist_sub','required:=true'])
 
 def kill_node(nodename): 
 	p2=Popen(['rosnode','list'],stdout=PIPE) 
